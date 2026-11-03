@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMCC-CCIS Week 2025</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header, footer {
+            background: rgb(114, 170, 114);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: rgb(145, 214, 145);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            background: rgb(149, 184, 149);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SMCC-CCIS Week 2027 🎓🎉</h1>
+    <p>Celebrating innovation & technology!</p>
+</header>
+
+<nav>
+    <a href="#overview">Overview</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#location">Location</a>
+    <a href="#registration">Registration</a>
+    <a href="#faq">FAQ</a>
+    <a href="#tech">Tech Demo</a>
+</nav>
+
+<section id="overview">
+    <h2>Event Overview</h2>
+    <p>Welcome to SMCC-CCIS Week!</p>
+    <img src="BANNER.img"
+         alt="Event Banner" width="300">
+</section>
+
+<section id="schedule">
+    <h2>Event Schedule</h2>
+    <ul>
+        <li>Day 1 - Opening Program 🕮 </li>
+        <li>Day 2 - Robotics Exhibition 🤖</li>
+        <li>Day 3 - Coding Hackathon 🦠 </li>
+        <li>Day 4 - Cybersecurity Session 🖥️</li>
+        <li>Day 5 - Awarding Ceremony 🏆 </li>
+    </ul>
+</section>
+
+<section id="location">
+    <h2>Event Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.824706942312!2d125.33782747559742!3d8.98827238962412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301ca2f04581cbb%3A0xe4e2656c7835d5f2!2sSaint%20Michael%20College%20of%20Caraga!5e0!3m2!1sen!2sph!4v1793685965505!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            title="Campus Map"></iframe>
+</section>
+
+<section id="registration">
+    <h2>Event Registration</h2>
+
+    <form id="myForm">
+        <label>Full Name:</label>
+        <input type="text" required minlength="3"><br>
+
+        <label>Email:</label>
+        <input type="email" required><br>
+
+        <label>Student ID:</label>
+        <input type="text" pattern="[0-9]{6,12}" required><br>
+
+        <label>Year Level:</label>
+        <select required>
+            <option value="">Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select><br>
+
+        <label>Event to Join:</label><br>
+        <input type="checkbox"> Coding Hackathon<br>
+        <input type="checkbox"> Tech Quiz Bowl<br>
+        <input type="checkbox"> Project Showcase<br>
+
+        <label>Reason for Joining:</label><br>
+        <textarea required></textarea><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <button onclick="toggleFAQ()">Show/Hide FAQ</button>
+
+    <div id="questions">
+        <p>Who can join? All eligible students.</p>
+        <p>Is registration required? Yes.</p>
+    </div>
+</section>
+
+<section id="tech">
+    <h2>Tech Demo</h2>
+    <pre><code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code></pre>
+    <p>Press <kbd>Ctrl + S</kbd> to save.</p>
+    <samp>Welcome to CCIS Week!</samp>
+</section>
+
+<section>
+    <h2>HTML Entities and URL Encoding</h2>
+    <p>&copy; &reg; &lt; &gt; &amp; 🎓💻</p>
+    <p>%20 represents a space in a URL.</p>
+    <p>Example: SMCC%20CCIS%20Week</p>
+</section>
+
+<section>
+    <h2>HTML vs XHTML</h2>
+    <p>HTML: &lt;br&gt;</p>
+    <p>XHTML: &lt;br /&gt;</p>
+</section>
+
+<footer>
+    <p>&copy; 2027 SMCC-CCIS Week</p>
+</footer>
+
+<script>
+    function toggleFAQ() {
+        let faq = document.getElementById("questions");
+        faq.style.display =
+            faq.style.display === "none" ? "block" : "none";
+    }
+
+    document.getElementById("myForm").onsubmit = function(event) {
+        event.preventDefault();
+        alert("Registration successful!");
+    };
+</script>
+
+</body>
+</html>
